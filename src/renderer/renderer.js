@@ -1,11 +1,9 @@
-function renderer(header, data){
+function renderer(header, content){
     return `
     <html>
     <body>
         <h1>${header}</h1>
-        <ul>
-        ${data.teasers.map(t => `<li>${t.title}</li>`)}
-        </ul>
+        <div>${content}</div>
     </body>
     </html>
     `;
